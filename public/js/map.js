@@ -1,5 +1,5 @@
 console.log(mapToken);
-mapboxgl.accessToken = mapToken;
+mapboxgl.accessToken ='pk.eyJ1Ijoic2lkZGhhcnRoMDAwMjciLCJhIjoiY2xxNHF3dHQ3MGI4ZzJwbGhidm4xcXpxNyJ9.HRP80FyJvTuJrvCagzw8Aw';
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     center: listing.geometry.coordinates, // starting position [lng, lat]
