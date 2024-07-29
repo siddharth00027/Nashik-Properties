@@ -5,7 +5,9 @@ const Listing = require("../models/listing");
 
 //set up for Geocoding
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');//for using geocodeing services
-const mapToken = process.env.MAP_TOKEN;
+// const mapToken = process.env.MAP_TOKEN;
+const mapToken ='pk.eyJ1Ijoic2lkZGhhcnRoMDAwMjciLCJhIjoiY2xxNHF3dHQ3MGI4ZzJwbGhidm4xcXpxNyJ9.HRP80FyJvTuJrvCagzw8Aw';
+
 const GeocodingClient = mbxGeocoding({ accessToken: mapToken });
 
 
