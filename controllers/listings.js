@@ -8,7 +8,7 @@ const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');//for usin
 // const mapToken = process.env.MAP_TOKEN;
 const mapToken ='pk.eyJ1Ijoic2lkZGhhcnRoMDAwMjciLCJhIjoiY2xxNHF3dHQ3MGI4ZzJwbGhidm4xcXpxNyJ9.HRP80FyJvTuJrvCagzw8Aw';
 
-const GeocodingClient = mbxGeocoding({ accessToken: mapToken });
+const GeocodingClient = mbxGeocoding({ accessToken: 'pk.eyJ1Ijoic2lkZGhhcnRoMDAwMjciLCJhIjoiY2xxNHF3dHQ3MGI4ZzJwbGhidm4xcXpxNyJ9.HRP80FyJvTuJrvCagzw8Aw'});
 
 
 module.exports.index = async (req, res) => {
