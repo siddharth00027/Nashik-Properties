@@ -104,6 +104,9 @@ app.get("/deleteallRevies",async(req,res)=>{
 // res.render("listings/showw.ejs", {
 //     listing
 // });
+app.get("/", (req, res) => {
+    res.render("temp.ejs");
+})
 app.get("/home", (req, res) => {
     res.render("temp.ejs");
 })
