@@ -15,7 +15,8 @@ const Listing=require('./models/listing.js');
 
 const Review=require('./models/reviews.js');
 // dbUrl = process.env.ATLASDB_URL || "mongodb://127.0.0.1:/27017/NashikPropertyi";
-dbUrl='mongodb://localhost:27017/NashikProperties';
+
+dbUrl='mongodb+srv://siddharth-sahane:kxQh9Eg96l7gsTL8@cluster0.idmnbmp.mongodb.net/Nashik-Properties?retryWrites=true&w=majority&appName=Cluster0';
 main()
     .then(() => {
         console.log("Connected to db.");
