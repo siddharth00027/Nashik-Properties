@@ -24,10 +24,23 @@ main()
     .catch(err => console.log(err));
 
 async function main() {
-    await  mongoose.connect(dbUrl);
+    // await  mongoose.connect(dbUrl);
+    mongoose.connect(dbUrl, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  ssl: true,
+  tlsInsecure: true,  // Use this if you are testing and don't have a valid certificate
+  tlsAllowInvalidCertificates: true, // If you're using self-signed certificates
+  tlsAllowInvalidHostnames: true, // If your certificate's hostname doesn't match the server
+  debug: true // Mongoose debug option
+}).then(() => {
+  console.log('Successfully connected to MongoDB');
+}).catch(err => {
+  console.error('Connection error', err);
+});
 }
 
-
+ 
 
 // for using passport
 const passport=require("passport");// require passport for authentication
